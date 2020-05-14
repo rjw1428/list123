@@ -10,9 +10,14 @@ import { Observable } from 'rxjs/internal/Observable';
 export class AppComponent implements OnInit{
   title = 'interview';
   categories$: Observable<any>
+  selectedCategory = "Pick a category!"
   constructor(private service: ServiceService) {}
 
   ngOnInit() {
     this.categories$=this.service.getData()
+  }
+
+  onSelect(selectedCategory) {
+    this.selectedCategory = selectedCategory
   }
 }

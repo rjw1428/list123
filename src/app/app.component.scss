@@ -3,9 +3,15 @@
     background-color: #444;
     font-weight: bold;
     box-shadow: 2px 2px 2px black;
+    transform: scale(.9);
 }
 
 .category-item:hover {
-    transform: scale(1.1);
+    transform: scale(1);
     background-color: #999;
+}
+
+.category-container {
+    height: 100%;
+    width: 100%;
 }
